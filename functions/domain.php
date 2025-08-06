@@ -1,5 +1,5 @@
 <?php
-function ARecord($domainName) {
+function ARecord($domainName) { 
     $get_A_records = dns_get_record(trim($domainName), DNS_A);
 	$result = "";
     if (empty($get_A_records)) {
